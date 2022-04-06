@@ -34,8 +34,26 @@ body {
   text-decoration: none;
 }
 
+.gray-section {
+  padding: 60px 0;
+}
+
 a {
   text-decoration: none;
+}
+
+h2 {
+  margin-bottom: 55px;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+@media (max-width: 980px) {
+  h2 {
+    margin-bottom: 35px;
+  }
 }
 
 .header {
@@ -312,4 +330,96 @@ a {
 
 .header .hamburger__menu .menu__item a:hover {
   text-decoration: none;
+}
+
+.about-us {
+  padding-top: 120px;
+}
+
+@media (max-width: 980px) {
+  .about-us {
+    padding: 70px 0;
+  }
+}
+
+.about-us__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .about-us__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 550px) {
+  .about-us__wrap {
+    padding: 0;
+  }
+}
+
+.about-us__img {
+  -ms-flex-preferred-size: 43%;
+      flex-basis: 43%;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .about-us__img {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    margin: 0 0 1.5rem 0;
+  }
+}
+
+.about-us__img::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 80, 131, 0.39)), to(rgba(34, 185, 119, 0.39)));
+  background: linear-gradient(to left, rgba(0, 80, 131, 0.39), rgba(34, 185, 119, 0.39));
+  z-index: 1;
+}
+
+.about-us__img img {
+  display: block;
+  max-width: 100%;
+}
+
+.about-us__text {
+  -ms-flex-preferred-size: 57%;
+      flex-basis: 57%;
+  padding-left: 95px;
+}
+
+@media (max-width: 980px) {
+  .about-us__text {
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us__text {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    padding: 0;
+  }
+}
+
+.about-us__text p {
+  margin-bottom: 35px;
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(27, 27, 27, 0.7);
 }
