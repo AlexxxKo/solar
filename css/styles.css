@@ -14,6 +14,12 @@ body {
   padding: 0 15px;
 }
 
+@media (max-width: 480px) {
+  .wrap {
+    padding: 0;
+  }
+}
+
 .btn {
   display: inline-block;
   padding: 15px 30px;
@@ -342,6 +348,12 @@ h2 {
   }
 }
 
+@media (max-width: 480px) {
+  .about-us {
+    padding: 50px 0;
+  }
+}
+
 .about-us__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -357,12 +369,6 @@ h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-}
-
-@media (max-width: 550px) {
-  .about-us__wrap {
-    padding: 0;
   }
 }
 
@@ -422,4 +428,107 @@ h2 {
   font-size: 18px;
   line-height: 30px;
   color: rgba(27, 27, 27, 0.7);
+}
+
+.icons {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .icons {
+    padding: 0;
+  }
+}
+
+.icons__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.icons__element {
+  -ms-flex-preferred-size: calc(100%/3 - 15px);
+      flex-basis: calc(100%/3 - 15px);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 0 25px;
+  text-align: center;
+}
+
+@media (max-width: 980px) {
+  .icons__element {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .icons__element {
+    -ms-flex-preferred-size: calc(100%/2 - 15px);
+        flex-basis: calc(100%/2 - 15px);
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .icons__element {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+}
+
+.icons__element p {
+  margin-bottom: 0;
+  font-size: 1rem;
+  line-height: 30px;
+  letter-spacing: 0.8px;
+  color: rgba(29, 29, 29, 0.7);
+}
+
+.icons__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 57px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 480px) {
+  .icons__img {
+    margin-bottom: 10px;
+  }
+}
+
+.icons__img img {
+  display: block;
+  max-width: 100%;
+}
+
+.icons__title {
+  margin-bottom: 27px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.9px;
+}
+
+@media (max-width: 480px) {
+  .icons__title {
+    margin-bottom: 15px;
+  }
 }
