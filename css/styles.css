@@ -533,17 +533,21 @@ h2 {
   }
 }
 
+.project {
+  padding-bottom: 120px;
+}
+
 @media (max-width: 768px) {
   .project {
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
   }
 }
 
 @media (max-width: 480px) {
   .project {
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
   }
 }
 
@@ -599,4 +603,127 @@ h2 {
 
 .project__btn {
   text-align: center;
+}
+
+.comment {
+  padding: 95px 0;
+  background: -webkit-gradient(linear, left top, right top, from(#005083), to(#22b977));
+  background: linear-gradient(to right, #005083, #22b977);
+}
+
+@media (max-width: 980px) {
+  .comment {
+    padding: 70px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .comment {
+    padding: 45px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .comment {
+    padding: 20px 0;
+  }
+}
+
+.comment__wrap {
+  padding: 0 175px;
+}
+
+@media (max-width: 980px) {
+  .comment__wrap {
+    padding: 0 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .comment__wrap {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .comment__wrap {
+    padding: 0;
+  }
+}
+
+.comment__icon {
+  font-size: 100px;
+  text-align: center;
+  line-height: 80px;
+  color: #fff;
+}
+
+.comment__post {
+  margin-bottom: 30px;
+}
+
+.comment__text {
+  margin-bottom: 25px;
+  font-size: 1rem;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+.comment__name {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+.comment__function {
+  font-size: 13px;
+  line-height: 22px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+.comment__carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.comment__photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.comment__img {
+  width: 45px;
+  margin: 0 7px;
+}
+
+.comment__img.active {
+  width: 70px;
+}
+
+.comment__img img {
+  width: 100%;
+}
+
+.carousel__item {
+  padding: 0 17px;
 }
