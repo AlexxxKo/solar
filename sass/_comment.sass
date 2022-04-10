@@ -45,6 +45,9 @@
 		display: flex
 		justify-content: center
 		align-items: center
+		.comment__arrow
+			font-size: 2.5rem
+			color: #9f9f9f
 	&__photo
 		display: flex
 		justify-content: center
@@ -56,6 +59,9 @@
 			width: 70px
 		img
 			width: 100%
+		&:first-child, &:last-child
+			@media (max-width: 480px)
+				display: none
 
 .carousel__item
 	padding: 0 17px
